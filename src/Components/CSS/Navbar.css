@@ -1,0 +1,265 @@
+.nav {
+  width: 100%;
+  position: fixed;
+  top: -10px;
+  left: 0;
+  /* padding: 0 50px; */
+  z-index: 3;
+}
+.navbar-main {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2em;
+}
+.white{
+  color:white;
+  /* text-shadow: -1px 1px 0 white, 1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white; */
+}
+.white span{
+  color: green;
+}
+
+@media screen and (max-width: 640px) {
+  .nav .logo .text-logo svg {
+    width: 150px;
+  }
+}
+
+.logo-icon.hide {
+  opacity: 0;
+  position: fixed;
+}
+
+.logo-icon {
+ position: fixed;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+.menu-toggle {
+  cursor: pointer;
+}
+/* Default styles for all screen sizes */
+.nav .logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.lets-talk {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-family: 'Hind', sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.lets-talk-white {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.hamBox {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: 0.3s ease;
+  padding: 1.3em;  
+  /* updated */
+  background: whitesmoke;
+}
+@media only screen and (max-width: 768px) {
+  .lets-talk {
+display: none;
+  }
+
+  .hamBox {
+  }
+  .nav {
+  }
+  .icon-a,.india-img{
+    display: none;
+  }
+
+}
+.text-logo svg {
+  height: 35px;
+}
+
+
+
+.nav-overlay {
+  position: fixed;
+  background-color: black;
+  z-index: -2;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 4em;
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hamBox:hover {
+  background: #2a2a2f;
+}
+.hamboxOpen {
+  background: #2a2a2f;
+}
+.lineTop,
+.lineBottom {
+  margin: 0 auto;
+  position: absolute;
+  display: block;
+  width: 27px;
+  height: 1.6px;
+  border-radius: 10px;
+  background-color:green;
+  left: 0;
+  right: 0;
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.lineTop {
+top: 1.5em;;
+}
+.lineBottom {
+  bottom: 1.4em;;
+}
+.lineTop.spin {
+  top: 1.3em;
+  transform: rotate(135deg);
+  background: green;
+}
+
+.lineBottom.spin {
+  bottom: 1.3em;
+  transform: rotate(225deg);
+  background: green;
+}
+
+ul.nav-links {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul.nav-links li {
+  list-style: none;
+  position: relative;
+}
+ul.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-size: 5em;
+  position: relative;
+  top: 0;
+  
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media only screen and (max-width: 768px) {
+  ul.nav-links{
+    top: 40%;
+  }
+  ul.nav-links li a {
+    font-size: 3em;
+    padding-left: 40px;
+    top: 40px;
+  }
+  .menu-nevbar{
+    display: none;
+  }
+  
+}
+
+
+.menu-nevbar {
+  position: absolute;
+  font-weight: 100px;
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: rotate(-90deg);
+  top: 26%;
+  left: 12%;
+}
+.nav-item-wrapper {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: -10;
+  width: 120%;
+  height: 100%;
+  background: black;
+  margin: auto;
+  cursor: pointer;
+}
+.nav-item :hover {
+  color: #329c63;
+  cursor: pointer;
+}
+
+.company-information {
+  position: absolute;
+  top: 69%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.company-information span {
+  font-weight: bold;
+  font-size: 18px;
+  color: white; /* Adjust color as needed */
+}
+.company-information a {
+  text-decoration: none;
+  font-family: 'Hind', sans-serif;
+  font-size: 1.2em;
+  position: relative;
+  color: green;
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+  .company-information {
+    font-size: 15px;
+    top: 75%;
+    right: 0;
+    transform: translate(0%, -50%);
+    width: 100%;
+    padding-left: 10%;
+  }
+
+
+}
+.address {
+  font-size: 20px;
+}
+.company-information a:hover {
+  color: #007bff; /* Adjust hover color as needed */
+}

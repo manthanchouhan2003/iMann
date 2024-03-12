@@ -1,0 +1,166 @@
+.footer-section{
+  font-family: 'Lato', sans-serif;
+  background: rgb(24, 23, 23);
+  color: white;
+  padding: 120px 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* font-family: Neue Plak W01 Regular; */
+}
+.work-section{
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  position: relative;
+  color: rgb(183, 183, 183);
+  text-decoration: none;
+}
+.work-section a{
+  margin-right: 20px;
+}
+.logo-text{
+  position: relative;
+  font-size: 40px;
+}
+.logo-text{
+  position: relative;
+  font-size: 40px;
+}
+
+.logo-footer{
+  position: relative;
+}
+.org-logo{
+  display: flex;
+  align-items: center;
+}
+.org-logo svg{
+  position: relative;
+
+}
+
+.logo-footer{
+  position: relative;
+}
+.org-logo svg{
+  position: relative;
+  
+}
+
+.contect-info{
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+}
+.contect-info h6{
+  text-decoration: underline;
+  color: gold;
+  font-size: 18px;
+  font-weight: 300;
+
+}
+.explor{
+  position: relative;
+}
+.address{
+  position: relative;
+}
+.address p{
+  font-size: 17px;
+  color: rgb(108, 109, 110);
+}
+
+
+
+.left{
+  position: relative;
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .work-section a{
+    margin-right: 15px  ;
+  }
+  .footer-section{
+    margin-top: 0%;
+    height: 70vh;
+  }
+
+  .foot-content{
+    position: relative;
+  }
+
+  
+ 
+  
+  .work-section {
+    /* flex-direction: column; */
+    color: #9c9c9c;
+    text-align: left;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .explor {
+    
+}
+
+
+.contect-info{
+}
+.get-touvh{
+  position: relative;
+}
+.email-engage{
+  position: relative;
+}
+.contect-no{    position: relative;
+}
+
+}
+
+
+.social-icons-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #333;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #4267b2; /* Change color on hover */
+}
+
+.social-icon:nth-child(2) {
+  background-color: #e4405f; /* Instagram color */
+}
+
+.social-icon:nth-child(3) {
+  background-color: #1da1f2; /* Twitter color */
+}
+
+.social-icon:nth-child(4) {
+  background-color: #2867b2; /* LinkedIn color */
+}
+
+@media (max-width: 768px) {
+  .social-icon {
+  
+    padding: 4px 8px; /* Adjust padding for smaller screens */
+    font-size: 9px; /* Adjust font size for smaller screens */
+  }
+  .social-icons-container{
+    position: absolute;
+    top: 450%;
+  }
+}

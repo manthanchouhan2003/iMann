@@ -1,0 +1,27 @@
+
+
+
+  .ball {
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0.6px solid #024627;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  .ball-2 {
+    width: 7px;
+    height: 7px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:gold;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  

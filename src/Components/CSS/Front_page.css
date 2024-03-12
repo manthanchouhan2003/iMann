@@ -1,0 +1,141 @@
+.front-page-parent-div {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(24, 23, 23);
+  color: white;
+}
+.aust-img{
+  position: absolute;
+  top: 10%;
+}
+.we-are {
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  transform: rotate(-90deg);
+  right: calc(0%);
+  font-size: 12rem;
+
+  white-space: nowrap;
+  top: 250px;
+  font-weight: bolder;
+  color: rgb(24, 23, 23);
+  text-shadow: -1px 1px 0 white, 1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+.we-are span{
+  color: green;
+  font-size: 10rem;
+
+}
+
+@media screen and (max-width: 768px) {
+  .we-are {
+  left: -50%;
+ 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .we-are {
+    font-size: 10rem;
+    top: 120px;
+    right: calc(-88%);
+    opacity: 0.5;
+
+
+  }
+}
+
+
+#circle{
+  position: relative;
+  width: 300px;
+}
+
+.content-main {
+  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+.main-heading {
+  font-size: 2rem;
+}
+
+.sub-heading-text-left {
+  color: green;
+  font-size: 1.2rem;
+  word-spacing: 5px;
+  letter-spacing: 4px;
+  line-height: 33px;
+  
+}
+
+.shutter-text-bottom {
+  position: relative;
+  left: 0%;
+  font-size: 4rem;
+}
+.shutter-text-bottom span{
+color: green;
+}
+
+.main-content {
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+.icon-a{
+
+  position: absolute;
+  align-items: center;
+   width: 136px;
+  left: 55%; 
+  top: 10vh;
+}
+.india-img{
+  position: absolute;
+  align-items: center;
+   width: 136px;
+  right: 3%; 
+  bottom: 10vh;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+  .content-main {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-main{
+    padding: 2rem 20px;
+  }
+  .main-heading {
+    font-size: 1.5rem; 
+  }
+
+  .sub-heading-text-left {
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 3.5px;
+    top: 30%;
+  }
+
+  .shutter-text-bottom {
+    font-size: 35px;
+    line-height: 39px;
+  }
+
+  .main-content {
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
+
+

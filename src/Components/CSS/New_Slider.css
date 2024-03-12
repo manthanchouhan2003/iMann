@@ -1,0 +1,218 @@
+
+/* Service Slider Css By developer Manthan */
+.Parent-class {
+    background: #00180d;
+    top: 0;
+    position: sticky;
+    height: 100vh;
+    transition: all 700ms ease;
+    overflow: hidden;
+  
+  }
+  .fan-main{
+    position: relative;
+  }
+  .circle-c{
+    position: absolute;
+    left: calc(50% - 300px);
+    opacity: 0.7;
+    color: white;
+  }
+  
+  .qualwebs-sec.dark {
+    color: #001a0c;
+  }
+  
+  .qualwebs-sec {
+    position: relative;
+    margin-left: 140px;
+    top: 76px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-color: #fff;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    letter-spacing: 0.02rem;
+    color: #335fe6;
+    font-size: 34px;
+  }
+  #spning-slider{
+    top: 0px;
+    position: relative;
+  }
+  .qualwebs-sec span {
+    color: #fff;
+  }
+  
+  .qualwebs-sec b {
+    color: rgb(255, 242, 0);
+    font: bold;
+  }
+  
+  .silent-div {
+    width: 170%;
+    position: relative;
+  }
+  
+  /* HEre we provide image size */
+  .sliding-on-of {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+    transition: width 1s ease-in;
+    left: calc(50% - 300px);
+  }
+  
+  .image-style {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    z-index: 0;
+  }
+  
+  .text-box-new1 {
+    position: absolute;
+    color: rgb(235, 234, 234);
+    font-size: 15px;
+    right: calc(50px);
+    width: 450px;
+    top: calc(50vh + 150px);
+    transition: transform 1s ease-out, opacity 1s ease-in-out, width 1s ease-in;
+  }
+  
+  #scrollImage {
+    width: 600px;
+    height: 100%;
+    transition: width 1s ease-in-out;
+    height: 600px;
+    transition: transform 1s ease-out, opacity 1s ease-in-out, width 1s ease-in;
+    animation: fadeOutAnimation 0.5s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  #backgroundHeading {
+    position: absolute;
+    letter-spacing: 2px;
+    z-index: 0;
+    margin: 0;
+    color: white;
+    font-size: 45px;
+    font: bold;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .my-empty-div {
+    height: 100vh;
+    background: #001a0c;
+  }
+  
+  .btn-position {
+    position: absolute;
+    bottom: 30%;
+    left: 368px;
+  }
+  
+  .lets-code {
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    transform: rotate(19deg);
+    width: 40px;
+  }
+  
+  .scrolling-show {
+    position: absolute;
+    top: 370px;
+    transform: rotate(90deg);
+    right: -10px;
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+  }
+  
+  .eli-cube-scaling {
+    transform: scale(1);
+    transition: transform 0.5s ease; /* Adjust the timing function and duration as needed */
+  }
+  .empty-id5{
+    height: 100vh;
+    background: white;
+  }
+  /* Media Queries */
+  @media screen and (max-width: 580px) {
+    .my-empty-div {
+      height: 100vh;
+      background: #001a0c;
+    }
+    .circle-c{
+display:none;
+    }
+    .qualwebs-sec {
+      font-size: 24px;
+      padding-left: 10px;
+    }
+  
+    .text-box-new1 {
+      font-size: 13px;
+      width: 80%; /* Adjust width for smaller screens */
+      right: 10%; /* Adjust right positioning for smaller screens */
+      top: 70vh;
+      font: bold;
+    }
+    .qualwebs-sec{
+      top: 110px;
+      padding-left: 30px;
+      margin-left: 0;
+    }
+  
+  
+    #backgroundHeading {
+      font-size: 35px;
+      left: 32px;
+      margin-top: 100px;
+    }
+  
+    .btn-position {
+      bottom: 5%; /* Adjust bottom positioning for smaller screens */
+      left: 10%;
+     
+    }
+  
+    .lets-code {
+      top: 80%; /* Adjust top positioning for smaller screens */
+      right: 5%; /* Adjust right positioning for smaller screens */
+      width: 20px; /* Adjust width for smaller screens */
+    }
+    .my-empty-div {
+      height: 100vh;
+      background: #001a0c;
+    }
+  
+    .scrolling-show {
+      top: 42%; /* Adjust top positioning for smaller screens */
+      font-size: 10px;
+    }
+    .sliding-on-of {
+      position: relative;
+      overflow: hidden;
+      left: calc(50% - 150px);
+    }
+    #scrollImage{
+      overflow: hidden;
+      width: 300px;
+    }
+    /* Adjust image size for mobile */
+    .sliding-on-of {
+      width: 280px;
+      
+    }
+    .lets-code {
+      top: 14%;
+      right: 42%;
+      width: 20px;
+  }
+  
+  }
+  
